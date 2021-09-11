@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Benni | Dicoding Submision</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/logo.ico" />
+  </head>
+  <body>
+    <div id="home" class="container">
+      <h1 class="header anim" style="--delay: 0.3s">Bookshelf Apps</h1>
+      <main class="main-container">
+        <section id="experiences" class="title anim" style="--delay: 0.3s">
+          Add Book
+        </section>
+        <article class="content-container anim" style="--delay: 0.4s">
+          <div class="desc">
+            <form id="inputBook">
+              <div class="input">
+                <label for="inputBookTitle">Title</label>
+                <input id="inputBookTitle" type="text" required />
+              </div>
+              <div class="input">
+                <label for="inputBookAuthor">Author</label>
+                <input id="inputBookAuthor" type="text" required />
+              </div>
+              <div class="input">
+                <label for="inputBookYear">Year</label>
+                <input id="inputBookYear" type="number" required />
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="complete"
+                  id="isCompleted"
+                  value="uncompleted"
+                  required
+                />
+                <label for="inputBookIsComplete">New / Uncompleted</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="complete"
+                  id="unCompleted"
+                  value="completed"
+                  required
+                />
+                <label for="inputBookIsComplete">Completed</label>
+              </div>
+              <button id="bookSubmit" type="submit">Add</button>
+            </form>
+          </div>
+        </article>
+        <section id="experiences" class="title anim" style="--delay: 0.3s">
+          Find Book
+        </section>
+        <article class="content-container anim" style="--delay: 0.4s">
+          <div class="desc">
+            <form id="searchBook">
+              <input id="search" type="text" />
+              <button id="searchSubmit" onclick="searching()" type="button">
+                Find
+              </button>
+            </form>
+          </div>
+        </article>
+        <section id="experiences" class="title anim" style="--delay: 0.3s">
+          New / Uncompleted
+        </section>
+        <article class="content-container anim" style="--delay: 0.4s">
+          <div class="desc">
+            <div id="incompleteBookshelfList" class="book_list"></div>
+          </div>
+        </article>
+        <section id="experiences" class="title anim" style="--delay: 0.3s">
+          Completed
+        </section>
+        <article class="content-container anim" style="--delay: 0.4s">
+          <div class="desc">
+            <div id="completeBookshelfList" class="book_list"></div>
+          </div>
+        </article>
+      </main>
+      <footer class="footer anim" style="--delay: 0.3s">
+        Copyright © 2021
+        <span class="footer-name" onclick="redirectWebsite()"> BENNI </span>.
+        All rights reserved.
+      </footer>
+    </div>
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
